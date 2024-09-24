@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export const ImageLoader = () => {
     const [numbers1, setNumbers1] = useState('');
     const [numbers2, setNumbers2] = useState('');
     const [images, setImages] = useState([]);
     const [error, setError] = useState('');
+    const [loading, setLoading] = useState(false);
+    const [loadingCount, setLoadingCount] = useState(0);
+
+    useEffect(() => {
+        if (loading) {
+            const interval = setInterval(() => {
+                setLoadingCount(prev => prev + 1);
+            }, 1000); // Increment counter every second
+
+            return () => clearInterval(interval);
+        }
+    }, [loading]);
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -12,7 +24,7 @@ export const ImageLoader = () => {
         const numberArray1 = numbers1.split(',').map(num => num.trim());
         const numberArray2 = numbers2.split(',').map(num => num.trim());
 
-        // Validation: Check if both arrays have the same length and at least two items
+        // Validation
         if (numberArray1.length !== numberArray2.length || numberArray1.length < 3 || numberArray1.length > 15) {
             setError('Both lists must have the same number of items and contain at least three items and fewer than 15.');
             return; // Exit early if validation fails
@@ -22,14 +34,10 @@ export const ImageLoader = () => {
         numberArray1.forEach(num => formData.append('numbers1', num));
         numberArray2.forEach(num => formData.append('numbers2', num));
 
-        // Log form data to the console
-        console.log("Form data:");
-        formData.forEach((value, key) => {
-            console.log(`${key}: ${value}`);
-        });
-
         setImages([]);  // Clear images before fetching new ones
         setError('');
+        setLoading(true);
+        setLoadingCount(0); // Reset loading counter
 
         fetch('https://nnboundingapi.onrender.com/get_images', {
             method: 'POST',
@@ -40,7 +48,6 @@ export const ImageLoader = () => {
                 return response.json();
             })
             .then(data => {
-                console.log("Fetched data:", data);
                 const imageUrls = Array.isArray(data) ? data : Object.values(data);
                 const updatedImageUrls = imageUrls.map(url => `${url}?t=${new Date().getTime()}`);
                 setImages(updatedImageUrls);
@@ -48,6 +55,9 @@ export const ImageLoader = () => {
             .catch(error => {
                 console.error('Error fetching images:', error);
                 setError('Failed to fetch images.');
+            })
+            .finally(() => {
+                setLoading(false);
             });
     };
 
@@ -64,7 +74,7 @@ export const ImageLoader = () => {
                     placeholder="e.g. 1,2"
                     required
                 />
-                <br/>
+                <br />
                 <label htmlFor="numbers2">Enter Second List of Numbers (comma separated):</label>
                 <input
                     type="text"
@@ -75,21 +85,29 @@ export const ImageLoader = () => {
                     required
                 />
 
-                <button type="submit" style={{color: 'white'}}>Fetch Images</button>
+                <button type="submit" style={{ color: 'white' }}>Fetch Images</button>
             </form>
 
-            {error && <p style={{color: 'red'}}>{error}</p>}
+            {error && <p style={{ color: 'red' }}>{error}</p>}
 
-            <div id="image-container">
-                {images.length > 0 ? (
-                    images.map((src, index) => (
-                        <img key={index} src={src} alt={`Image ${index + 1}`}
-                             style={{maxWidth: '25%', height: 'auto'}}/>
-                    ))
-                ) : (
-                    <p>No images to display.</p>
-                )}
-            </div>
+            {loading ? (
+                <div>
+                    <p>Loading...</p>
+                    <div className="loader" style={{ display: 'inline-block' }}></div>
+                    <p>Loading for {loadingCount} seconds...</p>
+                </div>
+            ) : (
+                <div id="image-container">
+                    {images.length > 0 ? (
+                        images.map((src, index) => (
+                            <img key={index} src={src} alt={`Image ${index + 1}`}
+                                 style={{ maxWidth: '25%', height: 'auto' }} />
+                        ))
+                    ) : (
+                        <p>No images to display.</p>
+                    )}
+                </div>
+            )}
         </div>
     );
 };
