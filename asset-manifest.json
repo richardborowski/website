@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website/static/css/main.18e314f0.css",
-    "main.js": "/website/static/js/main.308b2676.js",
+    "main.js": "/website/static/js/main.25f5d3e7.js",
     "static/js/453.6f116dd0.chunk.js": "/website/static/js/453.6f116dd0.chunk.js",
     "static/media/Google_Scholar_logo.svg.png": "/website/static/media/Google_Scholar_logo.svg.672a11a46c57059e326f.png",
     "static/media/nav-icon3.svg": "/website/static/media/nav-icon3.08b285abb8e118b52637efa5d65c5367.svg",
@@ -10,11 +10,11 @@
     "static/media/nav-icon1.svg": "/website/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/website/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.18e314f0.css.map": "/website/static/css/main.18e314f0.css.map",
-    "main.308b2676.js.map": "/website/static/js/main.308b2676.js.map",
+    "main.25f5d3e7.js.map": "/website/static/js/main.25f5d3e7.js.map",
     "453.6f116dd0.chunk.js.map": "/website/static/js/453.6f116dd0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.18e314f0.css",
-    "static/js/main.308b2676.js"
+    "static/js/main.25f5d3e7.js"
   ]
 }
