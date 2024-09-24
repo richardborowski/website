@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/images/logo.svg';
+import logo from '../assets/images/mlogo2.png';
 import navIcon1 from '../assets/images/nav-icon1.svg';
 import navIcon2 from '../assets/images/nav-icon2.svg';
 import navIcon3 from '../assets/images/nav-icon3.svg';
 import navIcon4 from '../assets/images/Google_Scholar_logo.svg.png';
+import navIcon5 from '../assets/images/github.png';
 import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
@@ -32,7 +33,9 @@ export const NavBar = () => {
                     <span className="navbar-text">
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/richardb11/"><img src={navIcon1} alt=""/></a>
+                  <a href="https://github.com/richardborowski"><img src={navIcon5} alt=""/></a>
                 <a href="https://scholar.google.com/citations?user=oCqepbQAAAAJ&hl=en"><img src={navIcon4} alt=""/></a>
+
               </div>
                     </span>
                 </Navbar.Collapse>
