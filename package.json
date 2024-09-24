@@ -1,7 +1,7 @@
 {
   "name": "peronal_web",
   "version": "0.1.0",
-  "homepage": "https://richardborowski.github.io/website",
+  "homepage": "https://richardborowski.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
