@@ -14,8 +14,8 @@ function App() {
         <div className="App">
             <NavBar />
             <Routes>
-                <Route path="/projects" element={<Projects />} /> {/* Add the projects route */}
-                <Route path="/nnbounding" element={<NNBoundingPage />} />
+                <Route path="/website/projects" element={<Projects />} /> {/* Add the projects route */}
+                <Route path="/website/nnbounding" element={<NNBoundingPage />} />
             </Routes>
         </div>
       </Router>
