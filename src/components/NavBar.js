@@ -17,7 +17,7 @@ export const NavBar = () => {
     return (
         <Navbar expand="md" className="navbar">
             <Container>
-                <Navbar.Brand href="/">
+                <Navbar.Brand href="/website">
                     <img src={logo} alt="Logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -25,7 +25,7 @@ export const NavBar = () => {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link as={Link} to="/" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+                        <Nav.Link as={Link} to="/website" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
                         <Nav.Link as={Link} to="/projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
                         <Nav.Link as={Link} to="/nnbounding" className={activeLink === 'nnbounding' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('nnbounding')}>NNBounding</Nav.Link>
                     </Nav>
