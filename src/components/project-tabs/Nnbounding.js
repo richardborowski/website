@@ -1,5 +1,6 @@
 import {Container} from "react-bootstrap";
 import {useState} from "react";
+import {ImageLoader} from "../ImageLoader";
 
 export const Nnbounding = () => {
 
@@ -9,6 +10,7 @@ export const Nnbounding = () => {
             <section className="nnbounding" id="nnboundingid">
                 <h3>NNBounding</h3>
             </section>
+
         </Container>
     )
 }
