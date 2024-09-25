@@ -1,21 +1,42 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.18e314f0.css",
-    "main.js": "/website/static/js/main.492f9a6f.js",
-    "static/js/453.6f116dd0.chunk.js": "/website/static/js/453.6f116dd0.chunk.js",
+    "main.css": "/website/static/css/main.3a7b503d.css",
+    "main.js": "/website/static/js/main.493783ff.js",
+    "static/js/453.89520a29.chunk.js": "/website/static/js/453.89520a29.chunk.js",
+    "static/media/JavaScript-Symbol.png": "/website/static/media/JavaScript-Symbol.76b0f951a1c871cb1c4f.png",
+    "static/media/spring.png": "/website/static/media/spring.8acb39f7b1345bb2110a.png",
+    "static/media/linux.png": "/website/static/media/linux.c5fcdce6e2d5225128a1.png",
+    "static/media/Scikit_learn.png": "/website/static/media/Scikit_learn.cc0c3607f2205328aa75.png",
+    "static/media/python.png": "/website/static/media/python.5afda9d7e68ecdb9ff5c.png",
+    "static/media/tensorflow.png": "/website/static/media/tensorflow.44a0900b86300ad4cce1.png",
+    "static/media/Git.png": "/website/static/media/Git.b458bd3a8a10282cc6fd.png",
+    "static/media/htmlcss.png": "/website/static/media/htmlcss.14ec2efc3faf7c49cbca.png",
+    "static/media/java.png": "/website/static/media/java.48d516496ee1f1ce1729.png",
+    "static/media/numpy.png": "/website/static/media/numpy.15214231b4330f40f9ce.png",
+    "static/media/cpp_logo.png": "/website/static/media/cpp_logo.7923017134420c84e482.png",
+    "static/media/docker.png": "/website/static/media/docker.2655e2cea53d3625693e.png",
     "static/media/mlogo2.png": "/website/static/media/mlogo2.427caa7fca8daf4d6010.png",
     "static/media/Google_Scholar_logo.svg.png": "/website/static/media/Google_Scholar_logo.svg.672a11a46c57059e326f.png",
+    "static/media/keras.png": "/website/static/media/keras.fefa6c57bc43592ebc3d.png",
     "static/media/github.png": "/website/static/media/github.987334e9f782cc505f25.png",
+    "static/media/revicons.eot": "/website/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/website/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/website/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/meter2.svg": "/website/static/media/meter2.1b8f416eccd1ee162218b8528a1c5cdc.svg",
+    "static/media/meter1.svg": "/website/static/media/meter1.c4085ff859afbd8488e9da47d4953850.svg",
+    "static/media/meter3.svg": "/website/static/media/meter3.2201f7e4df22bc4b08180210474f28cc.svg",
     "static/media/nav-icon3.svg": "/website/static/media/nav-icon3.08b285abb8e118b52637efa5d65c5367.svg",
     "index.html": "/website/index.html",
     "static/media/nav-icon1.svg": "/website/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
+    "static/media/arrow2.svg": "/website/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
+    "static/media/arrow1.svg": "/website/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "static/media/nav-icon2.svg": "/website/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.18e314f0.css.map": "/website/static/css/main.18e314f0.css.map",
-    "main.492f9a6f.js.map": "/website/static/js/main.492f9a6f.js.map",
-    "453.6f116dd0.chunk.js.map": "/website/static/js/453.6f116dd0.chunk.js.map"
+    "main.3a7b503d.css.map": "/website/static/css/main.3a7b503d.css.map",
+    "main.493783ff.js.map": "/website/static/js/main.493783ff.js.map",
+    "453.89520a29.chunk.js.map": "/website/static/js/453.89520a29.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18e314f0.css",
-    "static/js/main.492f9a6f.js"
+    "static/css/main.3a7b503d.css",
+    "static/js/main.493783ff.js"
   ]
 }
