@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import {Container, Navbar} from "react-bootstrap";
 import { NavBar } from "./components/NavBar";
@@ -16,9 +16,9 @@ function App() {
         <div className="App">
             <NavBar />
             <Routes>
-                <Route path="/website" element={<Home />} />
-                <Route path="/website/projects" element={<Projects />} /> {/* Add the projects route */}
-                <Route path="/website/nnbounding" element={<NNBoundingPage />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/projects" element={<Projects />} /> {/* Add the projects route */}
+                <Route path="/nnbounding" element={<NNBoundingPage />} />
             </Routes>
             <Footer />
         </div>
