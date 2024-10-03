@@ -1,6 +1,6 @@
 import {Container} from "react-bootstrap";
 import {useState} from "react";
-import {ImageLoader} from "../ImageLoader";
+import {TwoNeurons} from "../TwoNeurons";
 
 export const Nnbounding = () => {
 

@@ -32,9 +32,9 @@ export const NavBar = () => {
                     </Nav>
                     <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/richardb11/"><img src={navIcon1} alt=""/></a>
-                  <a href="https://github.com/richardborowski"><img src={navIcon5} alt=""/></a>
-                <a href="https://scholar.google.com/citations?user=oCqepbQAAAAJ&hl=en"><img src={navIcon4} alt=""/></a>
+                <a href="https://www.linkedin.com/in/richardb11/" target="_blank"><img src={navIcon1} alt=""/></a>
+                  <a href="https://github.com/richardborowski" target="_blank"><img src={navIcon5} alt=""/></a>
+                <a href="https://scholar.google.com/citations?user=oCqepbQAAAAJ&hl=en" target="_blank"><img src={navIcon4} alt=""/></a>
 
               </div>
                     </span>

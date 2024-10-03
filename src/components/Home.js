@@ -1,5 +1,5 @@
 import React from "react";
-import {ImageLoader} from "./ImageLoader";
+import {TwoNeurons} from "./TwoNeurons";
 import {Container} from "react-bootstrap";
 import {Skills} from "./Skills";
 

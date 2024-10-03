@@ -4,7 +4,7 @@ import {Container, Navbar} from "react-bootstrap";
 import { NavBar } from "./components/NavBar";
 import { Nnbounding } from "./components/project-tabs/Nnbounding"
 import { Projects } from "./components/Projects"
-import {ImageLoader} from "./components/ImageLoader";
+import {TwoNeurons} from "./components/TwoNeurons";
 import {NNBoundingPage} from "./components/NNBoundingPage";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Home} from "./components/Home";
