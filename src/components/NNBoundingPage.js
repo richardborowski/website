@@ -4,9 +4,13 @@ import {OneNeuron} from "./OneNeuron";
 import {Container} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {ToggleButton, ToggleButtonGroup} from "@mui/material";
+import {Helmet, HelmetProvider} from "react-helmet-async";
 
 
 export const NNBoundingPage = () => {
+
+
+
     const [alignment, setAlignment] = useState('web'); // Default value
 
     const handleChange = (event, newAlignment) => {
@@ -18,6 +22,11 @@ export const NNBoundingPage = () => {
 
     return (
         <div>
+            <HelmetProvider>
+                <Helmet>
+                    <title>AIR - NNBounding</title>
+                </Helmet>
+            </HelmetProvider>
             <Container className="mt-5">
                 <section className="nnbounding" id="nnboundingid" >
                     <h3>NNBounding Demo</h3>
