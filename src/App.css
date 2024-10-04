@@ -294,3 +294,16 @@ nav.navbar {
 }
 
 /*// Border Animation END//*/
+ /********** scrollbar **********/
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(138, 132, 132, 0.21);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: dimgrey;
+}
