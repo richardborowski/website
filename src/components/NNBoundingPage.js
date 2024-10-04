@@ -20,8 +20,10 @@ export const NNBoundingPage = () => {
         }
     };
 
+
     return (
-        <div>
+        <div className="nnbackground" style={{paddingBottom:"32px"}}>
+
             <HelmetProvider>
                 <Helmet>
                     <title>AIR - NNBounding</title>

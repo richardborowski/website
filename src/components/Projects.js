@@ -6,7 +6,8 @@ import {Helmet, HelmetProvider} from "react-helmet-async";
 
 export const Projects = () => {
     return (
-        <div>
+        <div className="pbackground">
+
             <HelmetProvider>
                 <Helmet>
                     <title>AIR - Projects</title>
