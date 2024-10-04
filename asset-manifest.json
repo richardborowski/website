@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.2e78341d.css",
-    "main.js": "/website/static/js/main.21245a6e.js",
+    "main.css": "/website/static/css/main.df347cab.css",
+    "main.js": "/website/static/js/main.5e4283c6.js",
     "static/js/453.89520a29.chunk.js": "/website/static/js/453.89520a29.chunk.js",
     "static/media/background-neuron.png": "/website/static/media/background-neuron.7deb09c161226673b8a5.png",
     "static/media/color-sharp.png": "/website/static/media/color-sharp.bea361cfef80fefc2d1e.png",
@@ -46,12 +46,12 @@
     "static/media/arrow2.svg": "/website/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/website/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "static/media/nav-icon2.svg": "/website/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.2e78341d.css.map": "/website/static/css/main.2e78341d.css.map",
-    "main.21245a6e.js.map": "/website/static/js/main.21245a6e.js.map",
+    "main.df347cab.css.map": "/website/static/css/main.df347cab.css.map",
+    "main.5e4283c6.js.map": "/website/static/js/main.5e4283c6.js.map",
     "453.89520a29.chunk.js.map": "/website/static/js/453.89520a29.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e78341d.css",
-    "static/js/main.21245a6e.js"
+    "static/css/main.df347cab.css",
+    "static/js/main.5e4283c6.js"
   ]
 }
