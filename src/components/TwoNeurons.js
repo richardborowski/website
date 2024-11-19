@@ -66,12 +66,13 @@ export const TwoNeurons = () => {
         setLoadingCount(0); // Reset loading counter
 
         /*
-        fetch('https://nnboundingapi.onrender.com/get_images', {
+        fetch('http://localhost:5000/get_images', {
             method: 'POST',
             body: formData,
         })
+       
         */
-        fetch('http://localhost:5000/get_images', {
+        fetch('https://nnboundingapi.onrender.com/get_images', {
             method: 'POST',
             body: formData,
         })
